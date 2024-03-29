@@ -3,7 +3,7 @@ package com.example.javabible.ch12_지네릭스;
 
 import java.util.ArrayList;
 
-class Fruit {
+class Fruit implements Eatable{
     public String toString(){
         return "Fruit";
     }
@@ -21,7 +21,7 @@ class Grape extends Fruit {
     }
 }
 
-class Toy extends Fruit {
+class Toy {
     public String toString(){
         return "Toy";
     }
