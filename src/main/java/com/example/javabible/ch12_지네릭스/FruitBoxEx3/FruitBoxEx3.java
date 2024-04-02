@@ -1,6 +1,26 @@
-package com.example.javabible.ch12_지네릭스;
+package com.example.javabible.ch12_지네릭스.FruitBoxEx3;
 
 import java.util.ArrayList;
+
+class Fruit implements Eatable {
+    public String toString(){
+        return "Fruit";
+    }
+}
+
+class Apple extends Fruit {
+    public String toString(){
+        return "Apple";
+    }
+}
+
+class Grape extends Fruit {
+    public String toString(){
+        return "Grape";
+    }
+}
+
+interface Eatable {}
 
 class Juice {
     String name;

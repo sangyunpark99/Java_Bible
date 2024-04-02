@@ -1,6 +1,54 @@
-package com.example.javabible.ch12_지네릭스;
+package com.example.javabible.ch12_지네릭스.FruitBoxEx2;
+
+import java.util.ArrayList;
 
 interface Eatable {}
+
+class Apple extends Fruit {
+    public String toString(){
+        return "Apple";
+    }
+}
+
+class Grape extends Fruit {
+    public String toString(){
+        return "Grape";
+    }
+}
+
+class Fruit implements Eatable {
+    public String toString(){
+        return "Fruit";
+    }
+}
+
+class FruitBox<T extends Fruit & Eatable> extends Box<T> {}
+
+class Box<T> {
+
+    ArrayList<T> list = new ArrayList<>();
+
+    void add(T item) {
+        list.add(item);
+    }
+
+    T get(int i) {
+        return list.get(i);
+    }
+
+    ArrayList<T> getList() {
+        return list;
+    }
+
+    int size(){
+        return list.size();
+    }
+
+    public String toString(){
+        return list.toString();
+    }
+}
+
 
 public class FruitBoxEx2 {
     public static void main(String[] args) {

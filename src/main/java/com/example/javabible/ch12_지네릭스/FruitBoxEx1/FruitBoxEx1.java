@@ -1,9 +1,8 @@
-package com.example.javabible.ch12_지네릭스;
-
+package com.example.javabible.ch12_지네릭스.FruitBoxEx1;
 
 import java.util.ArrayList;
 
-class Fruit implements Eatable{
+class Fruit implements Eatable {
     public String toString(){
         return "Fruit";
     }
@@ -42,5 +41,30 @@ public class FruitBoxEx1 {
 
         System.out.println(fruitBox);
         System.out.println(appleBox);
+    }
+}
+
+class Box<T> {
+
+    ArrayList<T> list = new ArrayList<>();
+
+    void add(T item) {
+        list.add(item);
+    }
+
+    T get(int i) {
+        return list.get(i);
+    }
+
+    ArrayList<T> getList() {
+        return list;
+    }
+
+    int size(){
+        return list.size();
+    }
+
+    public String toString(){
+        return list.toString();
     }
 }
