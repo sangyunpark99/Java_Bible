@@ -1,4 +1,4 @@
-package com.example.javabible.ch12_enum.EnumEx4;
+package com.example.javabible.ch12.ch12_enum.EnumEx4;
 
 abstract class MyEnum<T extends MyEnum<T>> implements Comparable<T> {
     static int id = 0;

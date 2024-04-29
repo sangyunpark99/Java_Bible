@@ -1,4 +1,4 @@
-package com.example.javabible.ch12_지네릭스.FruitBoxEx1;
+package com.example.javabible.ch12.ch12_지네릭스.FruitBoxEx1;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.example.javabible.ch12_enum.EnumEx2;
+package com.example.javabible.ch12.ch12_enum.EnumEx2;
 
 enum Direction {
 

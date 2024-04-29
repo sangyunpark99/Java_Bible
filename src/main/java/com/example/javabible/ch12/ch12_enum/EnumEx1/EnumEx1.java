@@ -1,4 +1,4 @@
-package com.example.javabible.ch12_enum.EnumEx1;
+package com.example.javabible.ch12.ch12_enum.EnumEx1;
 
 enum Direction {
     NORTH, EAST, WEST, SOUTH

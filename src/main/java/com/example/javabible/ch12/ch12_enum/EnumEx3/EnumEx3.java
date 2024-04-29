@@ -1,4 +1,4 @@
-package com.example.javabible.ch12_enum.EnumEx3;
+package com.example.javabible.ch12.ch12_enum.EnumEx3;
 
 enum Transportation {
     BUS(100) {
